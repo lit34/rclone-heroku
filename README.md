@@ -1,20 +1,20 @@
 
 
 # Heroku Google Drive
-Remote [Google Drive client](https://github.com/lit34/rcl21) on Heroku using Rclone
+Remote [Google Drive client](https://github.com/lit34/rclone-heroku) on Heroku using Rclone
 
 ## Installation
 Create new app
 
 ```
-heroku create myapp -b https://github.com/ewwink/heroku-google-drive.git
+heroku create myapp -b https://github.com/lit34/rclone-heroku.git
 heroku git:clone -a myapp
 ```
 
 Existing app, use: `add|set`
 
 ```
-heroku buildpacks:set https://github.com/lit34/rcl21 -a myapp
+heroku buildpacks:set https://github.com/lit34/rclone-heroku -a myapp
 ```
 
 go to `myapp` directory, create or copy `rclone.conf` and commit the change
